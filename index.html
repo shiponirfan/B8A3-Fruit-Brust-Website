@@ -18,16 +18,92 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
+    <!-- Font Awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/0449fcf4d1.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Tailwind Custom Class Name -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "fruit-primary": "#F85559",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- Custom CSS -->
+    <style>
+      .font-lato {
+        font-family: "Lato", sans-serif;
+      }
+    </style>
   </head>
-  <body>
-    <header>
-
+  <body class="font-lato">
+    <header class="container mx-auto">
+      <!-- Navbar Section -->
+      <nav class="my-12">
+        <div class="navbar bg-fruit-primary text-white rounded-full py-8 px-12">
+          <div class="navbar-start">
+            <div class="hidden lg:flex">
+              <ul class="menu menu-horizontal hover:text-white px-1 text-lg">
+                <li><a class="hover:text-white" href="#">Home</a></li>
+                <li><a class="hover:text-white" href="#">About Us</a></li>
+                <li><a class="hover:text-white" href="#">Shop</a></li>
+                <li><a class="hover:text-white" href="#">All Fruits</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar-center">
+            <a class="normal-case text-xl"
+              ><img src="./images/logo.png" alt="logo"
+            /></a>
+          </div>
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 text-fruit-primary rounded-box w-52"
+            >
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">All Fruits</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end hidden lg:flex">
+            <div class="join">
+              <input
+                class="input join-item rounded-full focus:outline-0 text-fruit-primary"
+                placeholder="Search here"
+              />
+              <button class="btn join-item bg-white rounded-r-full border-0">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
-    <main>
-
-    </main>
-    <footer>
-        
-    </footer>
+    <main></main>
+    <footer></footer>
   </body>
 </html>
