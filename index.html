@@ -82,16 +82,17 @@
               <label tabindex="0" class="btn btn-ghost lg:hidden">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
+                  width="24"
+                  height="24"
                   viewBox="0 0 24 24"
-                  stroke="currentColor"
+                  fill="none"
                 >
                   <path
+                    d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25"
+                    stroke="#121212"
+                    stroke-width="1.5"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
                   />
                 </svg>
               </label>
@@ -110,6 +111,7 @@
       </nav>
       <!-- Banner Slider -->
       <section class="relative">
+        <!-- Carousel Section -->
         <div class="carousel w-full h-64 md:h-auto">
           <div id="slide1" class="carousel-item relative w-full">
             <img class="" src="./images/banner1.png" class="w-full" />
@@ -245,28 +247,32 @@
           class="grid xl:grid-cols-5 lg:grid-cols-3 hidden lg:grid justify-between text-center xl:w-[1196px] lg:w-3/4 relative bg-white xl:-mt-36 lg:-mt-32 rounded-xl mx-auto shadow-lg"
         >
           <!-- Fruit Card 1 -->
-          <div class="xl:p-14 p-6">
-            <img class="w-36 h-28" src="./images/fruit1.png" alt="fruit" />
+          <div class="xl:p-14 p-6 flex flex-col justify-end items-center">
+            <img class="w-36" src="./images/fruit1.png" alt="fruit" />
             <h3 class="text-xl font-medium mt-4">Globe Grape</h3>
           </div>
           <!-- Fruit Card 2 -->
-          <div class="xl:p-14 p-6">
-            <img class="w-36 h-28" src="./images/fruit2.png" alt="fruit" />
+          <div class="xl:p-14 p-6 flex flex-col justify-end items-center">
+            <img class="w-36" src="./images/fruit2.png" alt="fruit" />
             <h3 class="text-xl font-medium mt-4">Orange</h3>
           </div>
           <!-- Fruit Card 3 -->
-          <div class="xl:p-14 p-10">
-            <img class="w-36 h-28" src="./images/fruit3.png" alt="fruit" />
+          <div class="xl:p-14 p-6 flex flex-col justify-end items-center">
+            <img class="w-36" src="./images/fruit3.png" alt="fruit" />
             <h3 class="text-xl font-medium mt-4">Mango</h3>
           </div>
           <!-- Fruit Card 4 -->
-          <div class="xl:p-14 p-6 hidden xl:block">
-            <img class="w-36 h-28" src="./images/fruit4.png" alt="fruit" />
+          <div
+            class="xl:p-14 p-6 xl:flex flex-col justify-end items-center hidden"
+          >
+            <img class="w-36" src="./images/fruit4.png" alt="fruit" />
             <h3 class="text-xl font-medium mt-4">Strawberry</h3>
           </div>
           <!-- Fruit Card 5 -->
-          <div class="xl:p-14 p-10 hidden xl:block">
-            <img class="w-36 h-28" src="./images/fruit5.png" alt="fruit" />
+          <div
+            class="xl:p-14 p-6 xl:flex flex-col justify-end items-center hidden"
+          >
+            <img class="w-36" src="./images/fruit5.png" alt="fruit" />
             <h3 class="text-xl font-medium mt-4">Pomegranates</h3>
           </div>
         </div>
