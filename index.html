@@ -45,9 +45,11 @@
   <body class="font-lato">
     <header class="container mx-auto">
       <!-- Navbar Section -->
-      <nav class="my-12 ">
-        <div class="navbar bg-fruit-primary text-white rounded-full py-8 px-12">
-          <div class="navbar-start">
+      <nav class="lg:my-12">
+        <div
+          class="navbar lg:bg-fruit-primary lg:text-white rounded-full py-7 px-5 xl:px-12"
+        >
+          <div class="navbar-start w-0 lg:w-1/2">
             <div class="hidden lg:flex">
               <ul class="menu menu-horizontal hover:text-white px-1 text-lg">
                 <li><a class="hover:text-white" href="#">Home</a></li>
@@ -57,40 +59,16 @@
               </ul>
             </div>
           </div>
-          <div class="navbar-center">
-            <a class="normal-case text-xl"
-              ><img src="./images/logo.png" alt="logo"
+          <div class="navbar-center flex-1 lg:flex-auto">
+            <a class="normal-case text-xl hidden lg:block"
+              ><img class="" src="./images/logo.png" alt="logo"
+            /></a>
+            <a class="normal-case text-xl block lg:hidden"
+              ><img class="" src="./images/logo-black.png" alt="logo"
             /></a>
           </div>
-          <div class="dropdown">
-            <label tabindex="0" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </label>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 text-fruit-primary rounded-box w-52"
-            >
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Shop</a></li>
-              <li><a href="#">All Fruits</a></li>
-            </ul>
-          </div>
-          <div class="navbar-end hidden lg:flex">
-            <div class="join">
+          <div class="navbar-end">
+            <div class="join hidden lg:flex">
               <input
                 class="input join-item rounded-full focus:outline-0 text-fruit-primary"
                 placeholder="Search here"
@@ -99,12 +77,40 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
               </button>
             </div>
+            <!-- Dropdown Menu -->
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content right-1/2 mt-3 z-30 p-2 shadow bg-base-100 text-fruit-primary rounded-box w-52"
+              >
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">All Fruits</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
       <!-- Banner Slider -->
       <section class="relative">
-        <div class="carousel w-full">
+        <div class="carousel w-full h-64 md:h-auto">
           <div id="slide1" class="carousel-item relative w-full">
             <img class="" src="./images/banner1.png" class="w-full" />
             <!-- Slide Content -->
@@ -1243,7 +1249,7 @@
     <!-- Footer Section -->
     <footer class="footer footer-center py-24 px-7 bg-[#121212] text-white">
       <div class="">
-        <img src="./images/logo-white.png" alt="logo" />
+        <img src="./images/logo.png" alt="logo" />
       </div>
       <div class="grid grid-cols-3 lg:grid-flow-col gap-9 lg:gap-14">
         <a href="#" class="link link-hover">Home</a>
